@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import firstImage from '../assets/firstImage.jpg';
+import secondImage from '../assets/secondImage.jpg'; // Import the second image
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="page-container">
+      <div className="button-container">
+        <button className="image-button">Главная</button>
+        <button className="image-button">Бронирование</button>
+        <button className="image-button">Акции</button>
+        <button className="image-button">Отзывы</button>
+        <button className="image-button">Галлерея</button>
+        <button className="image-button">Контакты</button>
+        <button className="lang-button">RU</button>
+        <button className="login-button">Личный кабинет</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="content-container">
+       <img src={firstImage} alt="First Image" className="firstImage" />
+       <div className="bottom-left-text">Насладись прогулкой на лошадях <br /> в компании любимых</div>
+       <div className="second-image-container">
+        <img src={secondImage} alt="Second Image" className="secondImage" />
+        <div className="Добро пожаловать">
+            Добро пожаловать в Health Club – ваш путь к миру верховой езды!
+          </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+   </div>
+  );
 }
 
-export default App
+export default App;

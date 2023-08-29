@@ -1,42 +1,74 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.page-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.firstImage {
+  width: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container {
+  position: absolute;
+  top: 20px;
+  left: 350px;
+  display: flex;
+  flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.image-button {
+  margin: 5px;
+  width: 130px; 
+  height: 40px;
+  font-size: 16px;
+  background-color: #FDFDFD;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.card {
-  padding: 2em;
+.lang-button {
+  margin: 5px;
+  width: 71px;
+  height: 44 px;
+  font-size: 16px;
+  background-color: #1A3E3E;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.read-the-docs {
-  color: #888;
+.login-button {
+  margin: 5px;
+  width: 178px;
+  height: 44 px;
+  font-size: 16px;
+  background-color: #1A3E3E;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.bottom-left-text {
+  position: absolute;
+  bottom: 600px;
+  left: 50px;
+  width: 1080px;
+  height: 150px;
+  font-size: 50px;
+  color: white;
+  font-family: "Peddana", sans-serif;
+
+}
+
+.secondImage {
+  margin-top: 40px;
+  margin-left: 338px;
+  width: 315.35px;
+  height: 526px;
 }
