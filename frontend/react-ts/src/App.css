@@ -54,7 +54,9 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-.bottom-left-text {
+
+
+.enjoy-the-trip {
   position: absolute;
   bottom: 600px;
   left: 50px;
@@ -66,9 +68,146 @@
 
 }
 
+/*/////////////////////////*/
+
+.second-content-container {
+  display: flex;
+  justify-content: center;
+}
+
 .secondImage {
   margin-top: 40px;
-  margin-left: 338px;
+  /*margin-left: 338px;*/
   width: 315.35px;
   height: 526px;
 }
+
+.second-page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us {
+  color: #F2BE22;
+  font-size: 24px;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 2px;
+  margin-left: 40px; 
+}
+
+.extrabold-32 {
+  color: #18121E;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 2px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  line-height: 1.2;
+}
+
+.company-desc {
+  color: #18121E;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  line-height: 1.5;
+}
+
+.book-trip {
+  background-color: #1A3E3E;
+  color: white;
+  border: none;
+  width: 197px;
+  height: 52px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+/*/////////////////////////*/
+
+.third-content-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.miniature-text-container {
+  display: flex;
+  align-items: flex-start; 
+}
+
+.miniature {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px; 
+  margin-top: 20px;
+}
+
+.text-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bold-18 {
+  font-weight: 550;
+  font-size: 18px;
+  margin-top: 2px; 
+  margin-bottom: 1px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.miniature-text {
+  margin-top: 0px; 
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.company-desc-34 {
+  color: #18121E;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 34px;
+  line-height: 1.5;
+}
+
+.extrabold-32-third {
+  color: #18121E;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 2px;
+  margin-bottom: 34px;
+  line-height: 1.2;
+}
+
+.about-us-third {
+  color: #F2BE22;
+  font-size: 24px;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 2px;
+}
+
+.images {
+  width: 250px;
+  height: 250px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.image-square {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 250px; /* Set the height to match the square */
+  width: 250px; /* Set the width to match the square */
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+
+
+
