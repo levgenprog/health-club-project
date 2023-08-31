@@ -8,6 +8,12 @@ import sixthImage from '../assets/sixthImage.jpg';
 import miniature1 from '../assets/miniature1.png';
 import miniature2 from '../assets/miniature2.png';
 import miniature3 from '../assets/miniature3.png';
+
+import direction1 from '../assets/direction1.jpeg';
+import direction2 from '../assets/direction2.jpg';
+import direction3 from '../assets/direction3.jpg';
+import direction4 from '../assets/direction4.jpg';
+
 import './App.css';
 
 function App() {
@@ -74,6 +80,43 @@ function App() {
             <img src={sixthImage} alt="Sixth Image" className="images" />
           </div>
         </div>
+
+        <div className="fourth-content-container">
+          <div className="fourth-page-content">
+            <p className="directions-yellow">по версии отдыхающих</p>
+            <p className="extrabold-32-fourth">Популярные направлениия</p>
+            <div className="image-row">
+              <div className="directions-container">
+                <img src={direction1} alt="Direction 1" className="directions" />
+                <div className="directions-rectangle">
+                  <div className="directions-description">Прогулки в горы</div>
+                  <div className="directions-rectangle-small">
+                  <div className="price">1200с/час</div>
+                  </div>
+                </div>
+              </div>
+              <div className="directions-container">
+                <img src={direction2} alt="Direction 2" className="directions" />
+                <div className="directions-rectangle">
+                  <div className="directions-description">Прогулки по манежу</div>
+                  <div className="directions-rectangle-small">
+                  <div className="price">600с/полчаса</div>
+                  </div>
+                </div>
+              </div>
+              <div className="directions-container">
+                <img src={direction3} alt="Direction 3" className="directions" />
+                <div className="directions-rectangle">
+                  <div className="directions-description">Иппотерапия</div>
+                  <div className="directions-rectangle-small">
+                    <div className="price">600с/полчаса</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </div >
