@@ -14,6 +14,7 @@
   left: 350px;
   display: flex;
   flex-direction: row;
+  z-index: 1;
 }
 
 .image-button {
@@ -26,6 +27,13 @@
   outline: none;
   border-radius: 5px;
   font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+  opacity: 0.8; /* Initial opacity */
+  transition: opacity 0.3s ease; /* Add transition effect for opacity */
+}
+
+.image-button:hover {
+  opacity: 1; /* Change opacity on hover */
 }
 
 .lang-button {
@@ -39,6 +47,8 @@
   outline: none;
   border-radius: 5px;
   font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Add transition effect for background, border, and color */
 }
 
 .login-button {
@@ -52,20 +62,31 @@
   outline: none;
   border-radius: 5px;
   font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Add transition effect for background, border, and color */
 }
 
+.lang-button:hover,
+.login-button:hover {
+  background-color: #158d8d; /* Change background color on hover */
+  border: 2px solid #158d8d; /* Add a border on hover */
+  color: white; /* Change text color on hover if needed */
+}
 
+.main-image-container {
+  position: relative;
+  display: inline-block;
+}
 
 .enjoy-the-trip {
   position: absolute;
-  bottom: 600px;
-  left: 50px;
-  width: 1080px;
-  height: 150px;
-  font-size: 50px;
+  top: 600px; 
+  left: 75px; 
+  padding: 10px;
+  /* background-color: rgba(0, 0, 0, 0.7); */
   color: white;
+  font-size: 50px;
   font-family: "Peddana", sans-serif;
-
 }
 
 /*/////////////////////////*/
@@ -124,13 +145,24 @@
   font-size: 16px;
   font-weight: 500;
   margin-left: 40px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Add transition effect for background, border, and color */
+}
+
+.book-trip:hover {
+  background-color: #158d8d; /* Change background color on hover */
+  border: 2px solid #158d8d; /* Add a border on hover */
+  color: white; /* Change text color on hover if needed */
 }
 
 /*/////////////////////////*/
 
 .third-content-container {
+  top: 100px;
   display: flex;
   justify-content: center;
+  position: relative;
+  background-color: #F5F5F5; /* Light grey background color */
+  padding: 20px;
 }
 
 .miniature-text-container {
@@ -163,6 +195,27 @@
   margin-top: 0px; 
   font-size: 14px;
   font-family: "Nunito Sans", sans-serif;
+}
+
+.directions-button {
+  margin-top: 50px; 
+  margin-left: -60px; 
+  width: 200px; 
+  height: 50px;
+  background-color: #1A3E3E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Add transition effect for background, border, and color */
+}
+
+.directions-button:hover {
+  background-color: #158d8d; /* Change background color on hover */
+  border: 2px solid #158d8d; /* Add a border on hover */
+  color: white; /* Change text color on hover if needed */
 }
 
 .company-desc-34 {
@@ -209,6 +262,13 @@
 
 /*/////////////////////////*/
 
+.fourth-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 90px; 
+}
+
 .directions-yellow {
   margin-bottom: 20px;
   color: #F2BE22;
@@ -234,14 +294,16 @@
   margin-top: 10px;
 }
 
- .directions-container {
+.directions-container {
   position: relative;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .directions {
   width: 400px;
   height: 500px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Add transitions */
 }
 
 .directions-rectangle {
@@ -250,20 +312,23 @@
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: rgba(253, 253, 253, 0.3); /* Use RGBA for the bigger rectangle */
+  background-color: #1A3E3E;
+  opacity: 0.8;
   border-radius: 0 0 5px 5px;
+  transition: width 0.3s ease, background-color 0.3s ease;
 }
 
 .directions-description {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   transform: translateY(-50%);
   left: 0;
-  width: 200px;
+  width: 210px;
   color: white;
   font-size: 20px;
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
+  transition: color 0.3s ease; /* Add transition for text color */
 }
 
 .directions-rectangle-small {
@@ -274,8 +339,10 @@
   width: 110px;
   height: 40px;
   background-color: #FDFDFD;
-  opacity: 0.8; 
+  opacity: 0.8;
   border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease; /* Add transition for opacity */
 }
 
 .price {
@@ -285,6 +352,26 @@
   height: 100%;
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
+  color: #1A3E3E;
+  transition: color 0.3s ease; /* Add transition for text color */
 }
 
+.directions-container:hover .directions-rectangle,
+.directions-container:hover .directions{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.2); /* Apply brightness effect on hover */
+}
 
+.directions-container .directions,
+.directions-container .directions-rectangle {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, width 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Add synchronized transitions */
+}
+
+.directions-container:hover .directions,
+.directions-container:hover .directions-rectangle {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.2); /* Apply brightness effect on hover */
+  color: #1A3E3E; /* Change text color on hover */
+}

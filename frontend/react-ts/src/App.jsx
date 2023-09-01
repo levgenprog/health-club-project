@@ -12,7 +12,8 @@ import miniature3 from '../assets/miniature3.png';
 import direction1 from '../assets/direction1.jpeg';
 import direction2 from '../assets/direction2.jpg';
 import direction3 from '../assets/direction3.jpg';
-import direction4 from '../assets/direction4.jpg';
+
+import { useState } from 'react';
 
 import './App.css';
 
@@ -30,8 +31,10 @@ function App() {
         <button className="login-button">Личный кабинет</button>
       </div>
       <div className="first-content-container">
-        <img src={firstImage} alt="First Image" className="firstImage" />
-        {/* <div className="enjoy-the-trip">Насладись прогулкой на лошадях <br /> в компании любимых</div> */}
+        <div className='main-image-container'>
+          <img src={firstImage} alt="First Image" className="firstImage" />
+          <div className="enjoy-the-trip">Насладись прогулкой на лошадях <br /> в компании любимых</div>
+        </div>
         <div className="second-content-container">
           <img src={secondImage} alt="Second Image" className="secondImage" />
           <div className="second-page-content">
@@ -70,6 +73,7 @@ function App() {
               <div className="text-section">
                 <p className="bold-18">Лояльные цены</p>
                 <p className="miniature-text">Мы предлагаем доступные цены, чтобы каждый мог насладиться <br /> радостью верховой езды и природой.</p>
+                <button className="directions-button">О направлениях</button>
               </div>
             </div>
           </div>
@@ -88,19 +92,21 @@ function App() {
             <div className="image-row">
               <div className="directions-container">
                 <img src={direction1} alt="Direction 1" className="directions" />
-                <div className="directions-rectangle">
-                  <div className="directions-description">Прогулки в горы</div>
-                  <div className="directions-rectangle-small">
-                  <div className="price">1200с/час</div>
+                <div class="directions-content">
+                  <div className="directions-rectangle">
+                    <div className="directions-description">Прогулки в горы</div>
+                    <div className="directions-rectangle-small">
+                      <div className="price">1200с/час</div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="directions-container">
                 <img src={direction2} alt="Direction 2" className="directions" />
                 <div className="directions-rectangle">
-                  <div className="directions-description">Прогулки по манежу</div>
+                  <div className="directions-description">&nbsp;Прогулки по манежу</div>
                   <div className="directions-rectangle-small">
-                  <div className="price">600с/полчаса</div>
+                    <div className="price">600с/полчаса</div>
                   </div>
                 </div>
               </div>
@@ -125,9 +131,4 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
 
