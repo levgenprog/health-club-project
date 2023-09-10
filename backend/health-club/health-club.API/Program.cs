@@ -69,7 +69,7 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("health-clubAuthC
 builder.Services.AddScoped<IRideRepository, SQLRideRepository>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IImageRepository, LocalImageRepository>();
-builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
