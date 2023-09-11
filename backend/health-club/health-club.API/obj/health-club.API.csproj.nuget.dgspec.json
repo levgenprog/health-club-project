@@ -75,7 +75,7 @@
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[6.32.3, )"
+              "version": "[7.0.0, )"
             },
             "Serilog": {
               "target": "Package",
@@ -99,7 +99,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[6.32.3, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

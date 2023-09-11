@@ -2,8 +2,8 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 namespace health_club.API.CustomActionFilters
 {
-	public class ValidateModelAttribute : ActionFilterAttribute
-	{
+    public class ValidateModelAttribute : ActionFilterAttribute
+    {
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             if (context.ModelState.IsValid == false)
@@ -14,4 +14,3 @@ namespace health_club.API.CustomActionFilters
 
     }
 }
-

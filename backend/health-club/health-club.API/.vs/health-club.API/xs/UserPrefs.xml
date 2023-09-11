@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{2B96FF21-EC45-4B1B-8324-8159E07AF790}|https">
+  <MonoDevelop.Ide.ItemProperties.health-club.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="appsettings.json" Line="11" Column="115" />
+      <File FileName="Data/health_clubAuthDbContext.cs" />
+      <File FileName="Program.cs" Line="131" Column="1" />
+      <File FileName="Data/health_clubDbContext.cs" />
+      <File FileName="Controllers/AuthController.cs" Line="78" Column="45" />
+      <File FileName="Models/DTO/RegisterRequestDto.cs" />
+      <File FileName="Models/DTO/LoginRequestDto.cs" />
+      <File FileName="Repositories/ITokenRepository.cs" />
+      <File FileName="Repositories/TokenRepository.cs" />
+      <File FileName="Controllers/RidesController.cs" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="Models/DTO/DifficultyDto.cs" />
+      <File FileName="Models/DTO/LoginResponseDto.cs" />
+      <File FileName="Repositories/SQLRideRepository.cs" />
+      <File FileName="Migrations/health_clubAuthDb/20230911174523_ChangeKey.cs" />
+      <File FileName="Migrations/health_clubAuthDb/20230911174523_ChangeKey.Designer.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="health-club.API">
+            <Node name="health-club.API">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

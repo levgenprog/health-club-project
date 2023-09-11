@@ -41,4 +41,3 @@ namespace health_club.API.Repositories
         }
     }
 }
-

@@ -13,6 +13,7 @@ namespace health_club.API.Controllers
     // /api/rides
     [Route("api/[controller]")]
     [ApiController]
+    
     public class RidesController : ControllerBase
     {
         private readonly IMapper mapper;
@@ -28,27 +29,27 @@ namespace health_club.API.Controllers
 
         // CREATE Ride
         // POST: /api/rides
+        [Authorize(Roles = "Writer")]
         [HttpPost]
         [ValidateModel]
-        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> Create([FromBody] AddRideRequestDTO addRideRequestDTO)
         {
-            
-             // Map DTO to Domain Model
-             var rideDomainModel = mapper.Map<Ride>(addRideRequestDTO);
 
-             await rideRepository.CreateAsync(rideDomainModel);
+            // Map DTO to Domain Model
+            var rideDomainModel = mapper.Map<Ride>(addRideRequestDTO);
 
-             // Map Domain model to DTO
+            await rideRepository.CreateAsync(rideDomainModel);
 
-             return Ok(mapper.Map<RideDTO>(rideDomainModel));    
-            
+            // Map Domain model to DTO
+
+            return Ok(mapper.Map<RideDTO>(rideDomainModel));
+
         }
 
         // GET Rides
         // GET: /api/rides
+        [Authorize(Roles = "Reader,Writer")]
         [HttpGet]
-        //[Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll()
         {
             //logger.LogInformation("GetAllRides Action Method was invoked");
@@ -74,14 +75,14 @@ namespace health_club.API.Controllers
             //    logger.LogError(ex, ex.Message);
             //    throw;
             //}
-           
+
         }
 
         // Get Ride by Id
         // GET: /api/rides/{id}
+        [Authorize(Roles = "Reader,Writer")]
         [HttpGet]
-        [Route("{id:Guid}")]
-        [Authorize(Roles = "Reader")]
+        [Route("{id:Guid}")]       
         public async Task<IActionResult> GetById([FromRoute] Guid id)
         {
             var rideDomainModel = await rideRepository.GetByIdAsync(id);
@@ -99,8 +100,8 @@ namespace health_club.API.Controllers
         // Rut: /api/Walks/{id}
         [HttpPut]
         [Route("{id:Guid}")]
-        [ValidateModel]
         [Authorize(Roles = "Writer")]
+        [ValidateModel]
         public async Task<IActionResult> Update([FromRoute] Guid id, UpdateRideRequestDto updateRideRequestDto)
         {
             // Map DTO to Domain Model
@@ -113,14 +114,15 @@ namespace health_club.API.Controllers
                 return NotFound();
             }
 
-            return Ok(mapper.Map<RideDTO>(rideDomainModel)); 
+            return Ok(mapper.Map<RideDTO>(rideDomainModel));
         }
 
         // Delete a Walk by Id
         // DELETE: /api/Rides/{id}
+        [Authorize(Roles = "Writer")]
         [HttpDelete]
         [Route("{id:Guid}")]
-        [Authorize(Roles = "Writer")]
+        //[Authorize(Roles = "Writer")]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
             var deletedRideDomainModel = await rideRepository.DeleteAsync(id);
@@ -136,4 +138,3 @@ namespace health_club.API.Controllers
 
     }
 }
-

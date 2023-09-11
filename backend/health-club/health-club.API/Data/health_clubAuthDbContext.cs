@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace health_club.API.Data
 {
-	public class health_clubAuthDbContext : IdentityDbContext
-	{
-		public health_clubAuthDbContext(DbContextOptions<health_clubAuthDbContext> options) : base(options)
-		{
+    public class health_clubAuthDbContext : IdentityDbContext
+    {
+        public health_clubAuthDbContext(DbContextOptions<health_clubAuthDbContext> options) : base(options)
+        {
 
-		}
+        }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -41,4 +41,3 @@ namespace health_club.API.Data
         }
     }
 }
-
