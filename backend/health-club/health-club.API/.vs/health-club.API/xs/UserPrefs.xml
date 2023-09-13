@@ -1,41 +1,48 @@
 ﻿<Properties StartupConfiguration="{2B96FF21-EC45-4B1B-8324-8159E07AF790}|https">
-  <MonoDevelop.Ide.ItemProperties.health-club.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ReviewsController.cs">
     <Files>
-      <File FileName="appsettings.json" Line="11" Column="115" />
-      <File FileName="Data/health_clubAuthDbContext.cs" />
-      <File FileName="Program.cs" Line="131" Column="1" />
-      <File FileName="Data/health_clubDbContext.cs" />
-      <File FileName="Controllers/AuthController.cs" Line="78" Column="45" />
+      <File FileName="appsettings.json" />
+      <File FileName="Data/health_clubAuthDbContext.cs" Line="48" Column="13" />
+      <File FileName="Program.cs" Line="77" Column="1" />
+      <File FileName="Data/health_clubDbContext.cs" Line="1" Column="1" />
+      <File FileName="Controllers/AuthController.cs" Line="81" Column="14" />
       <File FileName="Models/DTO/RegisterRequestDto.cs" />
       <File FileName="Models/DTO/LoginRequestDto.cs" />
       <File FileName="Repositories/ITokenRepository.cs" />
-      <File FileName="Repositories/TokenRepository.cs" />
-      <File FileName="Controllers/RidesController.cs" />
+      <File FileName="Repositories/TokenRepository.cs" Line="25" Column="70" />
+      <File FileName="Controllers/RidesController.cs" Line="140" Column="2" />
       <File FileName="Properties/launchSettings.json" />
-      <File FileName="Models/DTO/DifficultyDto.cs" />
+      <File FileName="Models/DTO/DifficultyDto.cs" Line="1" Column="1" />
       <File FileName="Models/DTO/LoginResponseDto.cs" />
-      <File FileName="Repositories/SQLRideRepository.cs" />
+      <File FileName="Repositories/SQLRideRepository.cs" Line="70" Column="6" />
       <File FileName="Migrations/health_clubAuthDb/20230911174523_ChangeKey.cs" />
-      <File FileName="Migrations/health_clubAuthDb/20230911174523_ChangeKey.Designer.cs" />
+      <File FileName="Models/DTO/RideDTO.cs" Line="1" Column="1" />
+      <File FileName="Repositories/IRideRepository.cs" Line="8" Column="40" />
+      <File FileName="Models/Domain/Review.cs" Line="18" Column="2" />
+      <File FileName="Models/DTO/ReviewDto.cs" Line="10" Column="1" />
+      <File FileName="Repositories/IReviewRepository.cs" Line="16" Column="1" />
+      <File FileName="Repositories/ReviewRepository.cs" Line="51" Column="10" />
+      <File FileName="Controllers/ReviewsController.cs" Line="83" Column="1" />
+      <File FileName="Mappings/AutoMapperProfiles.cs" Line="15" Column="37" />
+      <File FileName="Models/DTO/UpdateRideRequestDto.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="health-club.API">
             <Node name="health-club.API">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="Repositories" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.health-club.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
