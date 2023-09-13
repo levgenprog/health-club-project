@@ -1,4 +1,5 @@
 ﻿using System;
+using health_club.API.Models.Domain;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,8 @@ namespace health_club.API.Data
         {
 
         }
+
+        public DbSet<Review> Reviews { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -38,6 +41,11 @@ namespace health_club.API.Data
             };
 
             builder.Entity<IdentityRole>().HasData(roles);
+
+            builder.Entity<Review>()
+            .HasOne(r => r.User) // Each review has one associated user
+            .WithMany() // But each user can have many reviews
+            .HasForeignKey(r => r.UserId);  // The foreign key in the Review table that establishes this relationship is 'UserId'
         }
     }
 }

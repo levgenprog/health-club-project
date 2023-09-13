@@ -9,11 +9,11 @@ using health_club.API.Data;
 
 #nullable disable
 
-namespace health_club.API.Migrations
+namespace health_club.API.Migrations.health_clubDb
 {
     [DbContext(typeof(health_clubDbContext))]
-    [Migration("20230911153525_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20230913120645_initialMigration")]
+    partial class initialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

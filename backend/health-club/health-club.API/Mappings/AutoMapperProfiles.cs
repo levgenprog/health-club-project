@@ -11,6 +11,8 @@ namespace health_club.API.Mappings
             CreateMap<Ride, RideDTO>().ReverseMap();
             CreateMap<Difficulty, DifficultyDto>().ReverseMap();
             CreateMap<UpdateRideRequestDto, Ride>().ReverseMap();
+
+            CreateMap<Review, ReviewDto>().ReverseMap();
         }
     }
 }

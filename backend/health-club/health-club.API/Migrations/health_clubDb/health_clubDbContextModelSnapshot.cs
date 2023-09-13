@@ -8,7 +8,7 @@ using health_club.API.Data;
 
 #nullable disable
 
-namespace health_club.API.Migrations
+namespace health_club.API.Migrations.health_clubDb
 {
     [DbContext(typeof(health_clubDbContext))]
     partial class health_clubDbContextModelSnapshot : ModelSnapshot
