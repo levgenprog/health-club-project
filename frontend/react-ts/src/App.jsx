@@ -14,6 +14,7 @@ import direction2 from '../assets/direction2.jpg';
 import direction3 from '../assets/direction3.jpg';
 
 import './App.css';
+import Menu from './Comonents/Menu';
 
 function App() {
 
@@ -89,34 +90,10 @@ function App() {
 
   return (
     <div className="page-container">
-      <div className="button-container">
-        <button className="image-button">
-          {buttonTranslations[selectedLanguage].home}
-        </button>
-        <button className="image-button">
-          {buttonTranslations[selectedLanguage].booking}
-        </button>
-        <button className="image-button">
-          {buttonTranslations[selectedLanguage].offer}
-        </button>
-        <button className="image-button">
-          {buttonTranslations[selectedLanguage].review}
-        </button>
-        <button className="image-button">
-          {buttonTranslations[selectedLanguage].gallery}
-        </button>
-        <button className="image-button">
-          {buttonTranslations[selectedLanguage].contact}
-        </button>
-        <select className="lang-button" onChange={handleLanguageChange}>
-          <option value="en">EN</option>
-          <option value="ru" selected>RU</option>
-        </select>
-        <button className="login-button">
-          {buttonTranslations[selectedLanguage].login}
-        </button>
-      </div>
-      <div className="first-content-container">
+
+      <Menu/>
+
+      <div className="first-content-container" id='main'>
         <div className='main-image-container'>
           <img src={firstImage} alt="First Image" className="firstImage" />
           <div className="enjoy-the-trip">{buttonTranslations[selectedLanguage].enjoy.split('<br />').map((line, index, array) => (
@@ -126,7 +103,7 @@ function App() {
             </React.Fragment>
           ))}</div>
         </div>
-        <div className="second-content-container">
+        <div className="second-content-container" id='actia'>
           <img src={secondImage} alt="Second Image" className="secondImage" />
           <div className="second-page-content">
             <p className="about-us">{buttonTranslations[selectedLanguage].about}</p>
@@ -151,7 +128,7 @@ function App() {
           </div>
         </div>
 
-        <div className="third-content-container">
+        <div className="third-content-container" id='gal'>
           <div className="third-page-content">
             <p className="about-us-third">{buttonTranslations[selectedLanguage].about}</p>
             <p className="extrabold-32-third">
@@ -209,14 +186,14 @@ function App() {
           </div>
         </div>
 
-        <div className="fourth-content-container">
+        <div className="fourth-content-container" id='book'>
           <div className="fourth-page-content">
             <p className="directions-yellow">{buttonTranslations[selectedLanguage].peoplethink}</p>
             <p className="extrabold-32-fourth">{buttonTranslations[selectedLanguage].populardir}</p>
             <div className="image-row">
               <div className="directions-container">
                 <img src={direction1} alt="Direction 1" className="directions" />
-                <div class="directions-content">
+                <div className="directions-content">
                   <div className="directions-rectangle">
                     <div className="directions-description">{buttonTranslations[selectedLanguage].mountains}</div>
                     <div className="directions-rectangle-small">
